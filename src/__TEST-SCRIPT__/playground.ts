@@ -1,4 +1,4 @@
-import { ethers } from 'ethers';
+import { InfuraProvider } from 'ethers';
 import Web3 from 'web3';
 import {
   // getBalancesForEthereumAddress,
@@ -50,7 +50,7 @@ import {
 // executeWeb3();
 
 const executeEthersBulk = async () => {
-  const provider = new ethers.providers.InfuraProvider(
+  const provider = new InfuraProvider(
     1,
     '9aa3d95b3bc440fa88ea12eaa4456161'
   );
